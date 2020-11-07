@@ -1,0 +1,74 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+  全体*/
+body{
+	width: 960px;
+}
+
+.send_box{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.send_button {
+	font-size: 21px;
+	display: inline-block;
+	padding: 10px 150px;
+	text-decoration: none;
+	border-radius: 4px;
+	color: #ffffff;
+	background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+	border-bottom: solid 3px #5e7fca;
+	margin-bottom: 48px;
+}
+
+.send_button:active {
+		-webkit-transform: translateY(4px);
+		transform: translateY(4px);
+		box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+		border-bottom: none;
+}

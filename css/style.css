@@ -1,0 +1,576 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+  全体*/
+body{
+	width: 960px;
+}
+
+/*
+トップ全体の設定*/
+.title_box {
+	background: url(../img/mainbg.png);
+	background-size: cover;
+	background-position: center;
+	height: 480px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* タイトル */
+.title {
+	color: #ffffff;
+	font-size: 48px;
+	text-shadow: 1px 2px 3px #808080;
+	line-height: 1.5;
+}
+
+/*サブタイトル*/
+.subtitle {
+	color: #ffffff;
+	font-size: 36px;
+	text-shadow: 1px 2px 3px #808080;
+	line-height: 1.5;
+}
+
+/*　タイトル下の選択するところ　*/
+.feader {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	border-bottom: 2px solid #efefef;
+	margin-bottom: 120px;
+}
+
+/*　G'sロゴ　*/
+.feader_logo {
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/*G'sロゴ*/
+.feader_logos {
+   width: 40%;
+}
+
+/*各種テキスト*/
+.feader_text {
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+
+.feader_about {
+	font-size: 21px;
+	width: 20%;
+}
+.feader_course {
+	font-size: 21px;
+	width: 20%;
+}
+.feader_news {
+	font-size: 21px;
+	width: 20%;
+}
+.feader_access {
+	font-size: 21px;
+	width: 20%;
+}
+.feader_contact {
+	font-size: 21px;
+	width: 20%;
+}
+
+/*/アバウトの文字たち*/
+.about_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-left: 24%;
+	padding-right:24%;
+}
+
+.about_text_title {
+	font-size: 24px;
+	color: #ffd61a;
+	margin-bottom: 24px;
+}
+
+.about_text_0 {
+	margin-bottom: 64px;
+}
+
+.about_text_1 {
+	margin-bottom: 40px;
+}
+
+.about_text_2 {
+	margin-bottom: 40px;
+}
+
+.about_text_3 {
+	margin-bottom: 40px;
+}
+
+.about_text_4 {
+	margin-bottom: 80px;
+}
+
+/*アバウトの画像*/
+.about_slide {
+	display: flex;
+	width: 100%;
+	margin-bottom: 64px;
+	overflow: hidden;
+}
+
+.about_slide img {
+  width: 100%;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.about_slide img:first-child {
+  animation: loop 50s -25s linear infinite;
+}
+
+.about_slide img:last-child {
+  animation: loop2 50s linear infinite;
+}
+
+/*コースの文字たち*/
+.course_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.course_text_title {
+	font-size: 24px;
+	color: #222222;
+	margin-bottom: 15px;
+}
+
+.course_text_1 {
+	margin-bottom: 64px;
+}
+
+/*コースのセット01*/
+.course_box_01 {
+	display: flex;
+	justify-content: center;
+}
+
+/*コースのセット02*/
+.course_box_02 {
+	display: flex;
+	justify-content: center;
+}
+
+/*コースのセット03*/
+.course_box_03 {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 64px;
+}
+
+/*コースのセット04*/
+.course_box_04 {
+	width:100%;
+	display: flex;
+	justify-content: center;
+}
+
+/*コースの写真*/
+.course_box_image{
+	width:50%;
+}
+
+.course_image {
+	width: 100%;
+}
+
+/*コースのテキスト*/
+.course_box_text {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-left: 48px;
+	padding-right: 48px;
+	background-color: #efefef;
+}
+
+.course_text_title {
+	font-size: 24px;
+	color: #222222;
+	margin-bottom: 40px;
+}
+
+/*ニュース*/
+/*ニュースのテキスト*/
+.news_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.news_text_title {
+	font-size: 24px;
+	color: yellow;
+	margin-bottom: 4px;
+}
+
+.news_text_text{
+	margin-bottom: 64px;
+}
+
+/*ニュースのセット*/
+ 
+.news_box_top {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.news_box_set {
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.news_img {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 32px;
+}
+
+.news_box_tim {
+	margin-bottom: 24px;
+}
+
+.news_more {
+	display: flex;
+	justify-content: center;
+	margin-top: 56px;
+}
+
+
+/*モアボタン*/
+.news_button {
+	font-size: 21px;
+	display: inline-block;
+	padding: 10px 150px;
+	text-decoration: none;
+	border-radius: 4px;
+	color: #ffffff;
+	background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+	border-bottom: solid 3px #5e7fca;
+	margin-bottom: 48px;
+}
+
+.news_button:active {
+		-webkit-transform: translateY(4px);
+		transform: translateY(4px);
+		box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+		border-bottom: none;
+}
+
+/*アクセス*/
+.access {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #fafafa;
+	padding-bottom: 80px;
+	margin-bottom: 64px;
+}
+
+/*アクセスタイトル*/
+.access_title_top{
+	margin-top: 64px;
+	font-size: 24px;
+}
+
+.access_title_sub {
+	margin-top: 24px;
+	margin-bottom: 64px;
+}
+
+/*地図*/
+.access_map{
+	width:100%;
+	margin-bottom: 64px;
+}
+
+/*所在地*/
+.access_text {
+	display: flex;
+	justify-content: center;
+}
+
+.access_text_main {
+	margin-left: 48px;
+}
+
+.access_text_content {
+	margin-bottom: 24px;
+}
+
+/*コンタクト説明*/
+.contact_title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contact_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contact_title_main {
+	font-size: 24px;
+	margin-bottom: 12px;
+}
+
+.contact_title_sub {
+	margin-bottom: 64px;
+}
+
+.contact_text_2 {
+	margin-bottom: 32px;
+}
+
+.contact_text_3 {
+	margin-bottom: 80px;
+}
+
+
+
+/*入力フォーム*/
+.contact_fome{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.fome_text{
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	padding-left: 20%;
+}
+
+/*上三つの入力フォーム*/
+.fome_in{
+	display: flex;
+	justify-content: left;
+	flex-direction: column;
+	width: 60%;
+}
+
+/*左のテキスト文字*/
+.fome_text_1{
+	margin-bottom: 54px;
+}
+
+.fome_text_2{
+	margin-top: 32px;
+}
+
+.fome_text_3{
+	margin-top: 316px;
+}
+
+.name {
+	padding: 18px 164px;
+	border: 2px solid #bfbfbf;
+	border-radius: 3px;
+	margin-bottom: 24px;
+}
+
+.fome_mail{
+	margin-bottom: 40px;
+}
+
+/*ここからチェック項目*/
+.fome_check{
+	display: flex;
+	justify-content: left;
+}
+
+.fome_check_square{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+
+}
+
+.fome_check_label{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-left: 80px;
+}
+
+.fome_check_label_text{
+   font-size: 14px;
+   margin-top: 30px;
+   margin-bottom: 24px;
+}
+
+input[type=checkbox] {
+  transform: scale(1.6);
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid #dddddd;
+    padding: 5px 8px;
+}
+
+/*詳細*/
+.fome_details{
+	margin-top: 24px;
+	margin-bottom: 40px;
+}
+
+.details{
+	padding: 18px 18px;
+	border: 2px solid #bfbfbf;
+	border-radius: 3px;
+	margin-bottom: 24px;
+}
+
+/*送信ボタン*/
+.fome_button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 240px;
+}
+
+.fome_button_in{
+	font-size: 18px;
+	color: #fff;
+	background-color: #ffd61a;
+	padding: 14px 150px;
+}
+
+/*終わりの部分*/
+.crose_box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #707070;
+}
+
+.crose_box_text{
+	font-size: 18px;
+	color: #fff;
+	margin-top: 32px;
+	margin-bottom: 36px;
+}
+
+#page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #3f98ef;
+  opacity: 0.6;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}

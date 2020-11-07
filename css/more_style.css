@@ -1,0 +1,187 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+  全体*/
+body{
+	width: 960px;
+}
+
+/*ニュース*/
+/*ニュースのテキスト*/
+.news_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.news_text_title {
+	font-size: 24px;
+	color: yellow;
+	margin-bottom: 4px;
+}
+
+.news_text_text{
+	margin-bottom: 64px;
+}
+
+/*ニュースのセット*/
+ 
+.news_box_top {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.news_box_set {
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-left: 24px;
+	padding-right: 24px;
+	overflow: hidden;
+}
+
+.news_box_set_2 {
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-left: 24px;
+	padding-right: 24px;
+	overflow: hidden;
+}
+
+.news_img {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 32px;
+}
+
+.news_box_tim {
+	margin-bottom: 24px;
+}
+
+.news_more {
+	display: flex;
+	justify-content: center;
+	margin-top: 56px;
+}
+
+
+/*モアボタン*/
+.news_button {
+	font-size: 21px;
+	display: inline-block;
+	padding: 10px 150px;
+	text-decoration: none;
+	border-radius: 4px;
+	color: #ffffff;
+	background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+	border-bottom: solid 3px #5e7fca;
+	margin-bottom: 48px;
+}
+
+.news_button:active {
+		-webkit-transform: translateY(4px);
+		transform: translateY(4px);
+		box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+		border-bottom: none;
+}
+
+.about_slide {
+	display: flex;
+	width: 100%;
+	margin-bottom: 64px;
+
+}
+
+@keyframes loop {
+
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes loop3 {
+
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop4 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.news_box_set img:first-child {
+  animation: loop 25s -25s linear infinite;
+}
+
+.news_box_set img:last-child {
+  animation: loop2 50s linear infinite;
+}
+
+.news_box_set_2 img:first-child {
+  animation: loo3 25s -25s linear infinite;
+}
+
+.news_box_set_2 img:last-child {
+  animation: loop4 50s linear infinite;
+}
